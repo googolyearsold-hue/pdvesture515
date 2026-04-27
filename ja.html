@@ -33,7 +33,7 @@
     color: #7f8c8d;
     margin: 0 0 18px 0;
   }
-  .kolonnas {
+  .augša {
     display: flex;
     gap: 20px;
     flex: 1;
@@ -81,6 +81,20 @@
   .pedeja-citata {
     border-left-color: #2980b9;
   }
+  /* Bilžu vietas */
+  .bilde-placeholder {
+    width: 100%;
+    height: 110px;
+    border: 2px dashed #7f8c8d;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    color: #7f8c8d;
+    margin: 10px 0;
+    text-align: center;
+  }
   .jaunlatviesu-bloks {
     margin-top: 12px;
     border-top: 2px solid #2c3e50;
@@ -111,38 +125,41 @@
   <h1>Jānis Frīdrihs Baumanis</h1>
   <p class="dzives-gadi">Pirmais profesionālais latviešu arhitekts • 1834–1891</p>
 
-  <div class="kolonnas">
-    <!-- 1. kolonna: Biogrāfija -->
+  <div class="augša">
+    <!-- 1. kolonna: Biogrāfija + bilde -->
     <div class="kol">
       <h2>I. Biogrāfija</h2>
       
       <h3>Kur viss sākās</h3>
       <div class="rinda">
-        Dzimis 1834. gada 4. jūnijā Rīgā, Zaķusalā, mazā mājiņā, ko 1832. gadā bija uzcēlis viņa tēvs Jēkabs. Ģimene nebija bagāta – tēvs strādāja par enkurnieku. Viņu senči nāca no Būvmaņu mājām netālu no Doles salas.
+        Dzimis 1834. gada 4. jūnijā Rīgā, Zaķusalā, mājiņā, ko tēvs Jēkabs uzcēla 1832. gadā. Ģimene nebija bagāta – tēvs strādāja par enkurnieku. Senči nāca no Būvmaņu mājām pie Doles salas.
       </div>
       
       <h3>Izglītība</h3>
-      <div class="rinda">Sākumā mācījās pie arhitekta Heinriha Šēla. Vēlāk devās uz lielajām skolām:</div>
+      <div class="rinda">Mācījās pie arhitekta Heinriha Šēla. Vēlāk devās uz augstskolām:</div>
       <div class="rinda">• 1860–1862: Berlīnes Būvakadēmijā</div>
-      <div class="rinda">• 1862–1865: Sanktpēterburgas Mākslas akadēmijā (ieguva arhitekta diplomu)</div>
+      <div class="rinda">• 1862–1865: Sanktpēterburgas Mākslas akadēmijā (diploms)</div>
       
       <h3>Īpašie tituli</h3>
-      <div class="rinda">• Pirmais latvietis, kurš kļuva par īstu arhitektu ar augstāko izglītību</div>
-      <div class="rinda">• Vidzemes guberņas arhitekts – atbildēja par būvniecību visā Vidzemes novadā</div>
+      <div class="rinda">• Pirmais latvietis ar akadēmisku arhitekta izglītību</div>
+      <div class="rinda">• Vidzemes guberņas arhitekts</div>
+
+      <!-- 1. BILDE (piem., portrets) -->
+      <div class="bilde-placeholder">🖼️ Bilde 1<br>(piem., Baumaņa portrets)</div>
     </div>
 
-    <!-- 2. kolonna: Arhitekta darbs -->
+    <!-- 2. kolonna: Arhitekta darbs + bilde -->
     <div class="kol">
       <h2>II. Arhitekta darbs</h2>
       
       <h3>Ar ko nodarbojās</h3>
-      <div class="rinda">Visvairāk strādāja kā arhitekts – zīmēja ēkas eklektisma stilā (dažādu stilu sajaukumā). Viņam rūpēja arī pilsētas dzīve un sabiedriskās lietas.</div>
+      <div class="rinda">Zīmēja ēkas eklektisma stilā, rūpējās arī par pilsētas attīstību un sabiedriskām lietām.</div>
       
       <h3>Darba gaitas</h3>
-      <div class="rinda">• 1856–1860: Būvdarbu vadītājs Šēla uzņēmumā Rīgā</div>
-      <div class="rinda">• No 1865: Savs arhitektu birojs</div>
+      <div class="rinda">• 1856–1860: Būvdarbu vadītājs Šēla birojā</div>
+      <div class="rinda">• No 1865: Savs arhitekta birojs</div>
       <div class="rinda">• 1870–1880: Vidzemes guberņas galvenais arhitekts</div>
-      <div class="rinda">• 1879–1886: Rīgas pilsētas domes deputāts</div>
+      <div class="rinda">• 1879–1886: Rīgas pilsētas domnieks</div>
       
       <h3>Svarīgākie darbi</h3>
       <div class="rinda"><span class="izcelts">Saeimas nams</span> – 1864–1867</div>
@@ -150,6 +167,9 @@
       <div class="rinda"><span class="izcelts">Francijas vēstniecība</span> – 1872–1876</div>
       <div class="rinda"><span class="izcelts">Rīgas cirks</span> – 1888–1889</div>
       <div class="rinda"><span class="izcelts">Rīgas Apgabaltiesa</span> – 1888–1889</div>
+
+      <!-- 2. BILDE (piem., kāda ēka) -->
+      <div class="bilde-placeholder">🖼️ Bilde 2<br>(piem., Saeimas nams)</div>
     </div>
 
     <!-- 3. kolonna: Devums -->
@@ -161,8 +181,8 @@
       <div class="rinda" style="text-align: center;">gandrīz puse no Rīgas bulvāru loka ēkām</div>
       
       <h3>Lielākie nopelni</h3>
-      <div class="rinda">• <span class="izcelts">1868:</span> Palīdzēja dibināt Rīgas Latviešu biedrību un uzzīmēja tās pirmo namu</div>
-      <div class="rinda">• Uzzīmēja skatuves pirmajiem trim Dziesmu svētkiem (1873., 1880., 1888.)</div>
+      <div class="rinda">• <span class="izcelts">1868:</span> Palīdzēja dibināt Rīgas Latviešu biedrību, tai nama autors</div>
+      <div class="rinda">• Uzzīmēja estrādes pirmajiem trim Dziesmu svētkiem (1873., 1880., 1888.)</div>
       
       <h3>Viņa teiktais</h3>
       <div class="cittas">
@@ -174,12 +194,12 @@
     </div>
   </div>
 
-  <!-- Jaunlatviešu bloks, ielīmēts plakāta apakšā -->
+  <!-- Jaunlatviešu bloks ar PILNU tekstu un iekrāsotiem teikumiem -->
   <div class="jaunlatviesu-bloks">
     <h2>Laikmeta konteksts: Jaunlatvieši</h2>
     <div class="rinda" style="font-size: 12pt;">
       <span class="iezelts-teikums">Lielākie jaunlatviešu darbības sasniegumi bija nacionālās identitātes veidošanā.</span>
-      Jaunlatvieši radīja priekšstatu par vienu latviešu zemi, kā arī ieviesa latviešu rakstu valodā nosaukumu "Latvija" (pirmo reizi lietots 1862. gadā). Jaunlatviešu literāti pamatoja savrupu identitāti ar jauniem priekšstatiem par senatviešu patstāvību un pagāniskām dievībām, kas iekļāvās Eiropas romantisma tradīcijā. Vienlaikus vājinājās saikne ar luterisko baznīcu un veclatviešu kultūras mantojumu. Lai gan vairāki jaunlatvieši proponēja latviešu tuvināšanos slāviem, krievu valodai un kultūrai, nacionālās kultūras attīstība saglabāja saikni ar Viduseiropu un latīnu rakstību. <span class="iezelts-teikums">Jaunlatvieši lika pamatu mūsdienu latviešu nācijas konceptam.</span> Modernā latviešu nācija tapa uz etniska pamata, sekojot valodas un izcelsmes kopības principam, ko jaunlatvieši pārņēma no vācu (Viduseiropas) tradīcijas. Šī pieeja pārspēja otru alternatīvu – nācijas veidošanos uz kopīgas teritorijas un kultūras pamata, Baltijas provincēs saplūstot vācbaltu, latviešu un igauņu elementiem. Līdz ar to latviešu un igauņu nacionālās kustības radīja lūzumu Baltijas sabiedrības attīstībā. <span class="iezelts-teikums">Jaunlatviešu aktivitātes praktiski neskāra Latgali, un priekšstats par vienotu latviešu tautu 20. gadsimtā vēl bija tikai ideja.</span> Jaunlatviešu uztverē latviešu tauta nebija identificējama ar zemnieku kārtu, bet ar visu nāciju.
+      Jaunlatvieši radīja priekšstatu par vienu latviešu zemi, kā arī ieviesa latviešu rakstu valodā nosaukumu "Latvija" (pirmo reizi lietots 1862. gadā). Jaunlatviešu literāti pamatoja savrupu identitāti ar jauniem priekšstatiem par senatviešu patstāvību un pagāniskām dievībām, kas iekļāvās Eiropas romantisma tradīcijā. Vienlaikus vājinājās saikne ar luterisko baznīcu un veclatviešu kultūras mantojumu. Lai gan vairāki jaunlatvieši proponēja latviešu tuvināšanos slāviem, krievu valodai un kultūrai, nacionālās kultūras attīstība saglabāja saikni ar Viduseiropu un latīnu rakstību. <span class="iezelts-teikums">Jaunlatvieši lika pamatu mūsdienu latviešu nācijas konceptam.</span> Modernā latviešu nācija tapa uz etniska pamata, sekojot valodas un izcelsmes kopības principam, ko jaunlatvieši pārņēma no vācu (Viduseiropas) tradīcijas. Šī pieeja pārspēja otru alternatīvu – nācijas veidošanos uz kopīgas teritorijas un kultūras pamata, Baltijas provincēs saplūstot vācbaltu, latviešu un igauņu elementiem. Līdz ar to latviešu un igauņu nacionālās kustības radīja lūzumu Baltijas sabiedrības attīstībā. Latviešu nācijas tapšana nebeidzās jaunlatviešu darbības laikā. Latgales apvienošanās ar Kurzemī un Vidzemī palika 20. gs. jautājums. Priekšstats par vienotu latviešu tautu, kas ietvertu latgaliešus, bija tikai ideja. <span class="iezelts-teikums">Jaunlatviešu aktivitātes praktiski neskāra Vitebskas guberņu, tās iedzīvotāji nepiedalījās nacionālajā kustībā.</span> Jaunlatviešu uztverē latviešu tauta nebija identificējama ar zemnieku kārtu. Šis priekšstats atbilda Eiropas liberāļu un nacionālistu uzskatam, ka cilvēce ir dabiski organizēta nacionalitātēs, kam ir tiesības noteikt savu iekšējo dzīvi.
     </div>
   </div>
 
