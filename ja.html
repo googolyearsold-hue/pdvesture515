@@ -5,84 +5,104 @@
 <style>
   @page {
     size: A3 landscape;
-    margin: 12mm;
+    margin: 8mm;
   }
   body {
     font-family: 'Georgia', 'Times New Roman', serif;
     color: #2c3e50;
     background: #fdfdfd;
-    line-height: 1.4;
+    line-height: 1.35;
   }
   .plakats {
     border: 4px double #2c3e50;
-    padding: 20px;
-    min-height: 250mm;
+    padding: 15px;
+    min-height: 270mm;
+    display: flex;
+    flex-direction: column;
   }
   h1 {
     text-align: center;
-    font-size: 46pt;
-    margin: 0 0 5px 0;
+    font-size: 42pt;
+    margin: 0 0 2px 0;
     text-transform: uppercase;
     color: #1a1a1a;
   }
   .dzives-gadi {
     text-align: center;
-    font-size: 20pt;
+    font-size: 18pt;
     color: #7f8c8d;
-    margin: 0 0 25px 0;
+    margin: 0 0 18px 0;
   }
   .kolonnas {
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    flex: 1;
   }
   .kol {
     flex: 1;
     background: white;
-    padding: 10px;
+    padding: 8px;
   }
   h2 {
-    font-size: 22pt;
+    font-size: 20pt;
     border-bottom: 3px solid #c0392b;
     color: #c0392b;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
   h3 {
-    font-size: 17pt;
-    margin: 10px 0 5px;
+    font-size: 16pt;
+    margin: 8px 0 4px;
     color: #2980b9;
   }
   .rinda {
-    font-size: 14pt;
-    margin-bottom: 8px;
+    font-size: 13pt;
+    margin-bottom: 7px;
   }
   .izcelts {
     font-weight: bold;
   }
   .liels-skaitlis {
     display: block;
-    font-size: 30pt;
+    font-size: 28pt;
     font-weight: bold;
     color: #c0392b;
     text-align: center;
-    margin: 15px 0 5px;
+    margin: 12px 0 3px;
   }
   .cittas {
     font-style: italic;
     background: #f9f9f9;
     border-left: 5px solid #c0392b;
-    padding: 10px 15px;
-    margin: 15px 0;
-    font-size: 14pt;
+    padding: 8px 12px;
+    margin: 12px 0;
+    font-size: 13pt;
   }
   .pedeja-citata {
     border-left-color: #2980b9;
   }
+  .jaunlatviesu-bloks {
+    margin-top: 12px;
+    border-top: 2px solid #2c3e50;
+    padding-top: 8px;
+    font-size: 12pt;
+  }
+  .jaunlatviesu-bloks h2 {
+    margin-top: 0;
+    border-bottom: none;
+    color: #2c3e50;
+  }
+  .iezelts-teikums {
+    background: #fff9b0;
+    padding: 2px 5px;
+    font-weight: bold;
+    display: inline;
+  }
   .apakša {
     text-align: center;
-    font-size: 11pt;
+    font-size: 10pt;
     color: #bdc3c7;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 </style>
 </head>
@@ -98,17 +118,17 @@
       
       <h3>Kur viss sākās</h3>
       <div class="rinda">
-        Dzimis 1834. gada 4. jūnijā Rīgā, Zaķusalā, mazā mājiņā, ko 1832. gadā bija uzcēlis viņa tēvs Jēkabs. Ģimene nebija bagāta – tēvs strādāja par enkurnieku (taisīja enkurus). Viņu senči nāca no Būvmaņu mājām netālu no Doles salas.
+        Dzimis 1834. gada 4. jūnijā Rīgā, Zaķusalā, mazā mājiņā, ko 1832. gadā bija uzcēlis viņa tēvs Jēkabs. Ģimene nebija bagāta – tēvs strādāja par enkurnieku. Viņu senči nāca no Būvmaņu mājām netālu no Doles salas.
       </div>
       
       <h3>Izglītība</h3>
-      <div class="rinda">Sākumā palīdzēja pazīstamajam arhitektam Heinriham Šēlam un pie viņa mācījās. Vēlāk devās uz lielajām skolām:</div>
+      <div class="rinda">Sākumā mācījās pie arhitekta Heinriha Šēla. Vēlāk devās uz lielajām skolām:</div>
       <div class="rinda">• 1860–1862: Berlīnes Būvakadēmijā</div>
-      <div class="rinda">• 1862–1865: Sanktpēterburgas Mākslas akadēmijā (tur ieguva arhitekta diplomu)</div>
+      <div class="rinda">• 1862–1865: Sanktpēterburgas Mākslas akadēmijā (ieguva arhitekta diplomu)</div>
       
       <h3>Īpašie tituli</h3>
       <div class="rinda">• Pirmais latvietis, kurš kļuva par īstu arhitektu ar augstāko izglītību</div>
-      <div class="rinda">• Vidzemes guberņas arhitekts – svarīgs amats, kurā viņš atbildēja par būvniecību visā Vidzemes novadā</div>
+      <div class="rinda">• Vidzemes guberņas arhitekts – atbildēja par būvniecību visā Vidzemes novadā</div>
     </div>
 
     <!-- 2. kolonna: Arhitekta darbs -->
@@ -116,33 +136,33 @@
       <h2>II. Arhitekta darbs</h2>
       
       <h3>Ar ko nodarbojās</h3>
-      <div class="rinda">Visvairāk strādāja kā arhitekts – zīmēja ēkas tādā stilā, ko sauc par eklektismu (dažādu stilu sajaukumu). Bet viņam rūpēja arī pilsētas dzīve un sabiedriskās lietas.</div>
+      <div class="rinda">Visvairāk strādāja kā arhitekts – zīmēja ēkas eklektisma stilā (dažādu stilu sajaukumā). Viņam rūpēja arī pilsētas dzīve un sabiedriskās lietas.</div>
       
       <h3>Darba gaitas</h3>
-      <div class="rinda">• 1856–1860: Strādāja par būvdarbu vadītāju Šēla uzņēmumā Rīgā</div>
-      <div class="rinda">• No 1865. gada: Sāka strādāt pats – atvēra savu arhitektu biroju</div>
-      <div class="rinda">• 1870–1880: Bija visas Vidzemes guberņas galvenais arhitekts</div>
-      <div class="rinda">• 1879–1886: Darbojās Rīgas pilsētas domē – palīdzēja pieņemt lēmumus par pilsētas attīstību</div>
+      <div class="rinda">• 1856–1860: Būvdarbu vadītājs Šēla uzņēmumā Rīgā</div>
+      <div class="rinda">• No 1865: Savs arhitektu birojs</div>
+      <div class="rinda">• 1870–1880: Vidzemes guberņas galvenais arhitekts</div>
+      <div class="rinda">• 1879–1886: Rīgas pilsētas domes deputāts</div>
       
       <h3>Svarīgākie darbi</h3>
-      <div class="rinda"><span class="izcelts">Saeimas nams</span> (tagadējā Saeima) – celts 1864–1867</div>
-      <div class="rinda"><span class="izcelts">Mūzikas akadēmija</span> (toreiz Aleksandra ģimnāzija) – 1870–1875</div>
-      <div class="rinda"><span class="izcelts">Francijas vēstniecība</span> (skaista savrupmāja) – 1872–1876</div>
+      <div class="rinda"><span class="izcelts">Saeimas nams</span> – 1864–1867</div>
+      <div class="rinda"><span class="izcelts">Mūzikas akadēmija</span> – 1870–1875</div>
+      <div class="rinda"><span class="izcelts">Francijas vēstniecība</span> – 1872–1876</div>
       <div class="rinda"><span class="izcelts">Rīgas cirks</span> – 1888–1889</div>
-      <div class="rinda"><span class="izcelts">Rīgas Apgabaltiesas nams</span> (lielā tiesas ēka) – 1888–1889</div>
+      <div class="rinda"><span class="izcelts">Rīgas Apgabaltiesa</span> – 1888–1889</div>
     </div>
 
-    <!-- 3. kolonna: Mantojums -->
+    <!-- 3. kolonna: Devums -->
     <div class="kol">
-      <h2>III. Mantojums</h2>
+      <h2>III. Devums</h2>
       
       <h3>Mērogs</h3>
       <span class="liels-skaitlis">150+ ēku</span>
-      <div class="rinda" style="text-align: center;">gandrīz puse no skaistajām ēkām Rīgas bulvāru lokā ir viņa projektētas</div>
+      <div class="rinda" style="text-align: center;">gandrīz puse no Rīgas bulvāru loka ēkām</div>
       
       <h3>Lielākie nopelni</h3>
       <div class="rinda">• <span class="izcelts">1868:</span> Palīdzēja dibināt Rīgas Latviešu biedrību un uzzīmēja tās pirmo namu</div>
-      <div class="rinda">• Uzzīmēja lielās skatuves pirmajiem trim Vispārējiem latviešu Dziesmu svētkiem (1873., 1880., 1888. gads)</div>
+      <div class="rinda">• Uzzīmēja skatuves pirmajiem trim Dziesmu svētkiem (1873., 1880., 1888.)</div>
       
       <h3>Viņa teiktais</h3>
       <div class="cittas">
@@ -153,7 +173,17 @@
       </div>
     </div>
   </div>
+
+  <!-- Jaunlatviešu bloks, ielīmēts plakāta apakšā -->
+  <div class="jaunlatviesu-bloks">
+    <h2>Laikmeta konteksts: Jaunlatvieši</h2>
+    <div class="rinda" style="font-size: 12pt;">
+      <span class="iezelts-teikums">Lielākie jaunlatviešu darbības sasniegumi bija nacionālās identitātes veidošanā.</span>
+      Jaunlatvieši radīja priekšstatu par vienu latviešu zemi, kā arī ieviesa latviešu rakstu valodā nosaukumu "Latvija" (pirmo reizi lietots 1862. gadā). Jaunlatviešu literāti pamatoja savrupu identitāti ar jauniem priekšstatiem par senatviešu patstāvību un pagāniskām dievībām, kas iekļāvās Eiropas romantisma tradīcijā. Vienlaikus vājinājās saikne ar luterisko baznīcu un veclatviešu kultūras mantojumu. Lai gan vairāki jaunlatvieši proponēja latviešu tuvināšanos slāviem, krievu valodai un kultūrai, nacionālās kultūras attīstība saglabāja saikni ar Viduseiropu un latīnu rakstību. <span class="iezelts-teikums">Jaunlatvieši lika pamatu mūsdienu latviešu nācijas konceptam.</span> Modernā latviešu nācija tapa uz etniska pamata, sekojot valodas un izcelsmes kopības principam, ko jaunlatvieši pārņēma no vācu (Viduseiropas) tradīcijas. Šī pieeja pārspēja otru alternatīvu – nācijas veidošanos uz kopīgas teritorijas un kultūras pamata, Baltijas provincēs saplūstot vācbaltu, latviešu un igauņu elementiem. Līdz ar to latviešu un igauņu nacionālās kustības radīja lūzumu Baltijas sabiedrības attīstībā. <span class="iezelts-teikums">Jaunlatviešu aktivitātes praktiski neskāra Latgali, un priekšstats par vienotu latviešu tautu 20. gadsimtā vēl bija tikai ideja.</span> Jaunlatviešu uztverē latviešu tauta nebija identificējama ar zemnieku kārtu, bet ar visu nāciju.
+    </div>
+  </div>
+
   <div class="apakša">Vēsturiskas personas izpēte • Jānis Frīdrihs Baumanis • A3 formāts</div>
 </div>
 </body>
-</html>
+  </html>
